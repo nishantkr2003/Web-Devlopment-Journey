@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Exercise</title>
+</head>
+<body>
+    
+    <script>
+
+/*
+        let arr=[5,6];
+        console.log(arr);
+        arr.push(7);
+        console.log(arr);
+        arr.unshift(4);
+        console.log(arr);
+
+        function getElement(arr,position){
+            return arr[position-1];
+        }
+        let arr1=[1,2,3,4,5,6,7,8,9];
+        console.log(getElement(arr1,8));
+*/
+
+        function isPrime(num){
+            for(let i=2;i<num;i++){
+                if(num % i==0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        console.log(isPrime(1000));
+        let num=2;
+        let  i=0;
+        while(true){
+            if(isPrime(num)){
+                console.log(num);
+                i++;
+                if(i>=5){
+                    break;
+                }
+            }
+            num++;
+        }
+
+        
+    </script>
+</body>
+</html>
